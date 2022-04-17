@@ -27,3 +27,4 @@ done
 
 echo number of matches: $count
 echo $(date +"%c") : $count >> lottery.txt
+
