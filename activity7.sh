@@ -2,9 +2,10 @@
 
 
 echo "Welcome to 10-questions quiz and Good Luck!"
-echo "Question1: What's the capital of France?"
-correctanswer=Paris
+echo "Question1: Paris is the capital of France" "T/F?"
 read a
+correctanswer=T
+
 if [ ${a^^} = ${correctanswer^^} ]
 then 
 	echo "Correct answer"
@@ -12,9 +13,9 @@ else
 	echo "Wrong answer"
 fi
 
-echo "Question2: What's the capital of Germany?"
-correctanswer=Berlin
+echo "Question2: Berlin is the capital of Germany" "T/F?"
 read a
+correctanswer=T
 if [ ${a^^} = ${correctanswer^^} ]
 then
         echo "Correct answer"
@@ -22,9 +23,9 @@ else
         echo "Wrong answer"
 fi
 
-echo "Question3: What's the capital of Poland?"
-correctanswer=Warsaw
+echo "Question3: Gdansk is the capital of Poland" "T/F?"
 read a
+correctanswer=F
 if [ ${a^^} = ${correctanswer^^} ]
 then
         echo "Correct answer"
@@ -32,20 +33,9 @@ else
         echo "Wrong answer"
 fi
 
-echo "Question4: What's the capital of Japan?"
-correctanswer=Tokio
+echo "Question4: Tokio is the capital of Japan" "T/F?"
 read a
-if [ ${a^^} = ${correctanswer^^} ]
-then
-        echo "Correct answer"
-else
-        echo "Wrong answer"
-fi
-
-
-echo "Question5: What's the capital of Australia?"
-correctanswer=Canberra
-read a
+correctanswer=T
 if [ ${a^^} = ${correctanswer^^} ]
 then
         echo "Correct answer"
@@ -54,18 +44,8 @@ else
 fi
 
 
-echo "Question6: What's the capital of New Zealand?"
-correctanswer=Wellington
-read a
-if [ ${a^^} = ${correctanswer^^} ]
-then
-        echo "Correct answer"
-else
-        echo "Wrong answer"
-fi
-
-echo "Question7: What's the capital of Georgia?"
-correctanswer=Tbilisi
+echo "Question5: Sydney is the capital of Australia" "T/F?"
+correctanswer=F
 read a
 if [ ${a^^} = ${correctanswer^^} ]
 then
@@ -75,8 +55,18 @@ else
 fi
 
 
-echo "Question8: What's the capital of Spain?"
-correctanswer=Madrit
+echo "Question6: Auckland is the capital of New Zealand" "T/F?"
+correctanswer=F
+read a
+if [ ${a^^} = ${correctanswer^^} ]
+then
+        echo "Correct answer"
+else
+        echo "Wrong answer"
+fi
+
+echo "Question7: Tbilisi is the capital of Georgia" "T/F?"
+correctanswer=T
 read a
 if [ ${a^^} = ${correctanswer^^} ]
 then
@@ -86,8 +76,8 @@ else
 fi
 
 
-echo "Question9: What's the capital of Madeira?"
-correctanswer=Funchal
+echo "Question8: Barcelona is the capital of Spain" "T/F?"
+correctanswer=F
 read a
 if [ ${a^^} = ${correctanswer^^} ]
 then
@@ -97,8 +87,19 @@ else
 fi
 
 
-echo "Question10: What's the capital of Netherlands?"
-correctanswer=Amsterdam
+echo "Question9: Lisbona is the capital of Madeira" "T/F?"
+correctanswer=F
+read a
+if [ ${a^^} = ${correctanswer^^} ]
+then
+        echo "Correct answer"
+else
+        echo "Wrong answer"
+fi
+
+
+echo "Question10: Amsterdam is the capital of Netherlands" "T/F?"
+correctanswer=T
 read a
 if [ ${a^^} = ${correctanswer^^} ]
 then
