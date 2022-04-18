@@ -1,21 +1,17 @@
 #!/bin/sh
 
-a=0
+
+
+shuf -i 1-50 -n5 > lottery
+shuf -i 1-10 -n1 >> lottery
+
 array=(1 2 3 4 5)
-
-while [ $a -lt 5 ]
-do
-b=$((1 + $RANDOM % 10))
-array[$a]=$b
-
-a=`expr $a + 1`
-done
-
-read -p "Enter your lottery number: " n
-
+ 
+echo "Enter your 5 lottery numbers: "
+read number 
 i=0
 count=0
-while [ $i -lt 5 ]
+while [ $i -eq 5 ]
 do
 curr=${array[$i]}
 if [ $curr == n ]
@@ -26,5 +22,8 @@ i=`expr $i + 1`
 done
 
 echo number of matches: $count
+echo "your numbers:" $number
+echo "lottery numbers:" `cat lottery`
+diff lottery number
 echo $(date +"%c") : $count >> lottery.txt
 
